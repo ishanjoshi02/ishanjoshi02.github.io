@@ -1,3 +1,5 @@
+// import Typed from 'typed.js';
+
 (function($) {
   "use strict"; // Start of use strict
 
@@ -62,3 +64,19 @@ var onMapClickHandler = function(event) {
 }
 // Enable map zooming with mouse scroll when the user clicks the map
 $('.map').on('click', onMapClickHandler);
+
+
+window.onload = function() {
+  typeWriter()
+}
+var i = 0;
+var txt = "Ishan Joshi"; /* The text */
+var speed = 100; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typing_animation").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
