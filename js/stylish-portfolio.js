@@ -3,7 +3,6 @@
 (function ($) {
   "use strict"; // Start of use strict
 
-  // typeWriter()
   // Closes the sidebar menu
   $(".menu-toggle").click(function (e) {
     e.preventDefault();
@@ -67,15 +66,3 @@ var onMapClickHandler = function (event) {
 $('.map').on('click', onMapClickHandler);
 
 
-
-// var i = 0;
-// var txt = "Ishan Joshi"; /* The text */
-// var speed = 100; /* The speed/duration of the effect in milliseconds */
-
-// function typeWriter() {
-//   if (i < txt.length) {
-//     document.getElementById("typing_animation").innerHTML += txt.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, speed);
-//   }
-// }
